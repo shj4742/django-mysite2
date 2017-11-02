@@ -1,0 +1,14 @@
+{% extends 'base_header.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'Web/selfs/css/style.css' %}">
+{% block nav-list %}
+    <li><a href="{% url 'index_Web:index' %}">主页</a></li>
+    <li><a href="{% url 'index_Web:find_doctor' %}">找医生</a></li>
+    <li><a href="{% url 'index_Web:classic_answer' %}">经典问答</a></li>
+    <li><a href="{% url 'index_Web:health_info' %}">健康资讯</a></li>
+    <li class="active"><a href="{% url 'index_Web:repository' %}">糖尿病知识库</a></li>
+    <li><a href="{% url 'calorie:index' %}">食物热量表</a></li>
+{% endblock %}
+{% block page_content %}
+
+{% endblock %}

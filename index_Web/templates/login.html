@@ -1,0 +1,47 @@
+{% extends 'base_header.html' %}
+{% load static %}
+{% load calorie_counter_extras %}
+<link rel="stylesheet" href="{% static 'Web/selfs/css/style.css' %}">
+{% block nav-list %}
+    <li class="disabled"><a href="{% url 'index_Web:index' %}">主页</a></li>
+    <li class="disabled"><a href="{% url 'index_Web:find_doctor' %}">找医生</a></li>
+    <li class="disabled"><a href="{% url 'index_Web:classic_answer' %}">经典问答</a></li>
+    <li class="disabled"><a href="{% url 'index_Web:health_info' %}">健康资讯</a></li>
+    <li class="disabled"><a href="{% url 'index_Web:repository' %}">糖尿病知识库</a></li>
+    <li class="disabled"><a href="{% url 'calorie:index' %}">食物热量表</a></li>
+{% endblock %}
+{% block page_content %}
+<div class="container">
+    <div class="row">
+          <form class="form-horizontal col-sm-offset-3 col-md-offset-3" id="login_form">
+                <div class="panel col-md-6" id="mypanel">
+                    <div class="panel-heading text-center ">
+                        <h4>用户登录</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="add1"><span class="glyphicon glyphicon-user"></span></span>
+                                <input type="text" class="form-control" placeholder="用户名" aria-describedby="add1" name="userName">
+                            </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="add2"><span class="glyphicon glyphicon-lock"></span></span>
+                                <input type="password" class="form-control" placeholder="密码" aria-describedby="add2" name="userPwd">
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                 <div class="input-group col-md-12">
+                                    <input type="button" class="btn btn-success pull-right col-md-6" value="登录">
+                                    <input type="button" class="btn btn-info pull-left col-md-6" value="返回首页">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-right">&copy;2017  版权所有&nbsp;</p>
+                    </div>
+                </div>
+          </form>
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,227 @@
+{% extends 'base_header.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'Web/selfs/css/style.css' %}">
+{% block nav-list %}
+    <li class="active"><a href="{% url 'index_Web:index' %}">主页</a></li>
+    <li><a href="{% url 'index_Web:find_doctor' %}">找医生</a></li>
+    <li><a href="{% url 'index_Web:classic_answer' %}">经典问答</a></li>
+    <li><a href="{% url 'index_Web:health_info' %}">健康资讯</a></li>
+    <li><a href="{% url 'index_Web:repository' %}">糖尿病知识库</a></li>
+    <li><a href="{% url 'calorie:index' %}">食物热量表</a></li>
+{% endblock %}
+{% block page_content %}
+    <div class="carousel slide" id="carousel-245773">
+        <ol class="carousel-indicators">
+            <li data-slide-to="0" data-target="#carousel-245773">&nbsp;</li>
+            <li data-slide-to="1" data-target="#carousel-245773">&nbsp;</li>
+            <li data-slide-to="2" data-target="#carousel-245773">&nbsp;</li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item"><img alt="" src="{% static 'Web/selfs/imags/1.jpg' %}" />
+                <div class="carousel-caption" contenteditable="true">
+                    <h4>棒球</h4>
+                    <p>棒球运动是一种以棒打球为主要特点，集体性、对抗性很强的球类运动项目，在美国、日本尤为盛行。</p>
+                </div>
+            </div>
+            <div class="item"><img alt="" src="{% static 'Web/selfs/imags/2.jpg' %}" />
+                <div class="carousel-caption" contenteditable="true">
+                    <h4>冲浪</h4>
+                    <p>冲浪是以海浪为动力，利用自身的高超技巧和平衡能力，搏击海浪的一项运动。运动员站立在冲浪板上，或利用腹板、跪板、充气的橡皮垫、划艇、皮艇等驾驭海浪的一项水上运动。</p>
+                </div>
+            </div>
+            <div class="item active"><img alt="" src="{% static 'Web/selfs/imags/3.jpg' %}" />
+                <div class="carousel-caption" contenteditable="true">
+                    <h4>自行车</h4>
+                    <p>以自行车为工具比赛骑行速度的体育运动。1896年第一届奥林匹克运动会上被列为正式比赛项目。环法赛为最著名的世界自行车锦标赛。</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a class="left  carousel-control" data-slide="prev" href="#carousel-245773"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        </div>
+        <div  class="text-center" >
+            <a class="right carousel-control" data-slide="next" href="#carousel-245773"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+    </div>
+    <div class="colL660 contentBody">
+    <div class="container">
+        <div class="row col-md-12">
+            <div class="detail">
+                <h1 class="text-success text-center">2017年中国糖尿病行业发展趋势及市场规模预测【图】</h1>
+                <div class="info">
+                    <span>2017年01月11日 15:09</span>
+                    <span>10000人浏览</span>
+            </div>
+            <div class="articleBody news-content" id="contentBody">
+                <p>&nbsp; &nbsp; 糖尿病是一种由于胰岛素分泌不足或外周组织对胰岛素不敏感引起的代谢性疾病，
+                    以持续的高血糖状态为特征，并可能引起各种组织、脏器（如眼、肾、心脏、血管、神经等）的
+                    长期损害、功能不全或衰竭。根据发病机制不同，糖尿病可以被分为Ⅰ型糖尿病、Ⅱ型糖尿病、
+                    妊娠糖尿病和其他类型糖尿病。
+                </p>
+                <p style="text-align: center;">四大类型糖尿病发病率与概况</p>
+                <p style="text-align: center;">
+                    <img src="http://img.chyxx.com/2017/01/20170111150523_m.png" alt="">
+                </p>
+                <p style="text-align: right;">数据来源：公开资料</p>
+                <p>&nbsp; &nbsp;&nbsp;目前尚未有完全根治糖尿病的办法，控制血糖是糖尿病治疗的核心。
+                    对于糖尿病患者而言，疾病的治疗是一个综合管理的过程，需要饮食、运动、药物、血糖监测和健康教育
+                    “五架马车”并驾齐驱。</p>
+                    <p>&nbsp; &nbsp;&nbsp;目前，糖尿病治疗方案基本按照“生活方式干预→口服降糖药治疗→胰岛素治疗”
+                        的路径开展。饮食控制和运动等生活方式干预贯穿于治疗始终，当单纯生活方式干预不能使血糖控制达标时
+                        ，即开始药物治疗。随着患者胰岛β细胞功能的减退，血糖控制会越来越难，在治疗不达标的情况下就要
+                        进入下一步治疗。</p>
+                    <p>&nbsp; &nbsp;&nbsp;一、中国是全球糖尿病第一大国</p>
+                    <p>&nbsp; &nbsp;&nbsp;据统计，2015 年全球20-79 岁的人中有约4.15 亿人患糖尿病（患病率8.8%），
+                        另外有3.18 亿人糖耐量受损（前期患病率6.7%）。中国是全球糖尿病患者第一大国，2015 年病患人数高达
+                        1.096 亿人，130 万人死于糖尿病及其并发症。同时据IDF 预测，如果不加干预，2040 年全球糖尿病患者
+                        将达6.42 亿，糖尿病前期人群4.81 亿，我国患者数量将上升至1.54 亿。</p>
+                    <p style="text-align: center;">全球糖尿病现状与2040年预测</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150524_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p style="text-align: center;">2015年全球糖尿病患者人数排名前十国家情况</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150524te_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p>&nbsp; &nbsp;&nbsp;据统计，目前在糖尿病患者中存在“1/2定律”，即全球糖尿病患者中平均而言
+                        仅有50%得知自己已患病。根据2013年宁光教授发表在JAMA上的流行病学研究显示，
+                        我国糖尿病病患知晓率仅为30.1%。同时，中国成年人中“准糖尿病患者”人群可能高达50.1%。
+                        而在美国，根据2014年CDC的调查数据显示，成年人中“准糖人”的比例为37%。</p>
+                    <p>&nbsp; &nbsp;&nbsp;我国糖尿病患知晓率仅为30.1%，其中仅有25.8%的患者得到治疗，
+                        而在进行治疗的患者中，血糖得到良好控制的仅有39.7%，据此测算，糖尿病患者中，
+                        血糖得到控制的患者比例仅为3.08%。在城市和乡村，上述数据存在显著差异，且不同性别之间
+                        差异也较大，经济不发达地区的女性糖尿病的控制情况非常低。在美国，统计显示患者糖尿病患
+                        知晓率约为75%，约85.3%的患者采用胰岛素或者口服降糖药治疗。</p>
+                    <p style="text-align: center;">我国糖尿病知晓率、治疗率与控制率极低</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150525_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p>&nbsp; &nbsp;&nbsp;2015年美国在糖尿病领域的医疗花销高达3200亿美元
+                        （包括保险、治疗、护理费用等），位居全球糖尿病花销第一，占比超过全球10%。
+                        中国位居第二，为510亿美元。如果我们按照两国糖尿病患者数量进行估算，美国与
+                        中国单一糖尿病患者的年花销分别为1092与465美元。</p>
+                    <div align="center">中美两国糖尿病总花销与人均花销对比</div>
+                    <div class="datatableWrap">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td width="25%">
+                                        <div align="center">类别</div>
+                                    </td>
+                                    <td width="25%">
+                                        <div align="center">总花销</div>
+                                    </td>
+                                    <td width="25%">
+                                        <div align="center">患者数</div>
+                                    </td>
+                                    <td width="25%">
+                                        <div align="center">人均花销</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="25%">
+                                        <div align="center">美国</div>
+                                    </td>
+                                    <td width="25%">
+                                        <div align="center">3200亿美元</div>
+                                    </td>
+                                    <td width="25%">
+                                        <div align="center">2930万</div>
+                                    </td>
+                                    <td width="25%">
+                                        <div align="center">1.09万美元</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="25%">
+                                        <div align="center">中国</div>
+                                    </td>
+                                    <td width="25%">
+                                        <div align="center">510亿美元</div>
+                                    </td>
+                                    <td width="25%">
+                                        <div align="center">1.096亿</div>
+                                    </td>
+                                    <td width="25%">
+                                        <div align="center">465美元</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p style="text-align: right;">&nbsp;数据来源：公开资料</p>
+                    <p>&nbsp; &nbsp;&nbsp;美国糖尿病医疗花销占美国医疗总花销的10%左右，
+                        除了相应药物与治疗费用外，患者每个月都有一定的血糖试纸费用可以经过医保报销。
+                        同时，医保允许支付新诊断糖尿病患者10 小时的教育费用；对于启用胰岛素治疗的患者，
+                        医保允许支付他们2小时如何用胰岛素、如何测血糖的教育费用；根据患者
+                        糖尿病类型（1 型或2 型）及病情程度的不同，患者通过网络视频连线向糖尿病中心
+                        咨询或视频会诊的费用，医保也予以支付。</p>
+                    <p>&nbsp; &nbsp;&nbsp;2014年全球医药市场规模达到10,272亿美元，同比增长8.40%，
+                        新兴市场是推动医药行业发展的主要因素。2015年全球糖尿病医疗保健支出总额达6730亿美元，
+                        占全球医疗费用的12%，到2040年，糖尿病相关医疗费用将突破8020亿美元。
+                        2014年全球糖尿病药品收入636亿美元，6年复合增长率15.28%。
+                        目前，糖尿病用药已跃居全球药品销售排行第二位，仅次于肿瘤用药。
+                        2015年全球糖尿病药物市场中，胰岛素产品约占56%，GLP-1受体激动剂类药物约占10%，
+                        DPP-4抑制剂类药物占24%，SGLT-2抑制类药物占5%，其他传统小分子降糖药占4%。</p>
+                    <p style="text-align: center;">全球医药市场规模</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150738_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p style="text-align: center;">2008-2014年全球糖尿病市场规模</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150738u3_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p style="text-align: center;">2014年全球各类疾病药品市场对比</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150739_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p style="text-align: center;">2015年全球糖尿病市场格局</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150739uz_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p style="text-align: center;">2011-2015年全球糖尿病市场垄断寡头销售情况</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150739r5_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p>&nbsp; &nbsp;&nbsp;目前糖尿病药品市场中欧美企业占据主导地位，诺和诺德、赛诺菲、
+                        礼来、默沙东、阿斯利康、强生、诺华、拜耳等巨头占据80%以上市场份额。在各个细分领域，
+                        市场先入企业具有较大先发优势。同时，由于糖尿病药品领域壁垒较高，行业竞争格局难有颠覆性的变化，
+                        国际寡头垄断地位基本稳定。近年来随着新型糖尿病治疗药的出现，糖尿病药物呈现快速增长趋势，
+                        全球各大药企在糖尿病药物领域大量布局，陆续出现众多销售额超过十亿美元的重磅品种。</p>
+                    <p>&nbsp; &nbsp;&nbsp;2015年在全球糖尿病花销前十的国家中，我国位列第二。
+                        2015年国内糖尿病用药市场规模高达413亿元，同比增长6.7%。由于糖尿病存在发病率高、
+                        诊断率及治疗率低，我国糖尿病市场潜在空间巨大。在我国糖尿病用药市场中，
+                        胰岛素及其类似物的市场规模高达176亿元，占比42.6%。口服降糖药占据了糖尿病用药市场份额的56.6%，
+                        市场规模达到233.6亿元，同比增长8.8%。</p>
+                    <p style="text-align: center;">2007-2015我国医药制造业总产值</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150739jh_m.png" alt=""></p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p>&nbsp; &nbsp;&nbsp;2015年国内糖尿病用药终端市场规模为413.8亿元。同比增长了6.8%。其中：
+                        口服降糖药占据糖尿病用药233.6亿元（占比56.6%），同比增长了8.8%。其中α-糖苷酶抑制剂类、
+                        磺酰脲类和双胍类分别占比30.1%、24.1%和14.8%。胰岛素促泌剂类共占比29.2%。GLP-1受体激动剂
+                        与DPP-4抑制剂占比仅为1.4%。单一品种来看，畅销产品前三名分别为阿卡波糖、二甲双胍和瑞格列奈，
+                        市场份额分别为27.9%、14.8%和13.2%。</p>
+                    <p style="text-align: center;">2015年我国口服降糖药市场份额</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150740_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料</p>
+                    <p style="text-align: center;">2015年我国口服降糖药畅销产品TOP10市场份额</p>
+                    <p style="text-align: center;">
+                        <img src="http://img.chyxx.com/2017/01/20170111150740pj_m.png" alt="">
+                    </p>
+                    <p style="text-align: right;">数据来源：公开资料&nbsp;</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

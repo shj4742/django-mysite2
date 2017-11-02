@@ -1,0 +1,56 @@
+{% extends 'base_header.html' %}
+{% load static %}
+{% load calorie_counter_extras %}
+<link rel="stylesheet" href="{% static 'Web/selfs/css/style.css' %}">
+{% block nav-list %}
+    <li><a href="{% url 'index_Web:index' %}">主页</a></li>
+    <li><a href="{% url 'index_Web:find_doctor' %}">找医生</a></li>
+    <li><a href="{% url 'index_Web:classic_answer' %}">经典问答</a></li>
+    <li><a href="{% url 'index_Web:health_info' %}">健康资讯</a></li>
+    <li><a href="{% url 'index_Web:repository' %}">糖尿病知识库</a></li>
+    <li class="active"><a href="{% url 'calorie:index' %}">食物热量表</a></li>
+{% endblock %}
+{% block page_content %}
+    <div class="container">
+        <div class="row">
+            <h3 class="text-success">食物热量表</h3>
+            {% for food in contacts %}
+                <div class="media well">
+                    <a href="#" class="pull-left">
+                        <img src="{{food.image_addr}} " alt="no image" title="{{ food.title }}" width="80px" height="80px" class="media-object">
+                    </a>
+                    <div class="media-body" contenteditable="true">
+                        <h4 class="media-heading">{{ food.title }}</h4>
+                        <p>{{ food.content }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <nav aria-label="Page navigation" class="text-center">
+            <ul class="pagination">
+                {% if contacts.has_previous %}
+                    <li>
+                        <a href="?page={{ contacts.previous_page_number }}">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+                {% for pg in contacts.paginator.page_range %}
+{#                    {% if contacts.number == pg %}#}
+{#                        <li class="active"><a href="?page-{{ pg }}">{{ pg }}</a></li>#}
+{#                    {% else %}#}
+{#                        <li><a href="?page-{{ pg }}">{{ pg }}</a></li>#}
+{#                    {% endif %}#}
+                    {% circle_page contacts.number pg %}
+                {% endfor %}
+                {% if contacts.has_next %}
+                    <li>
+                        <a href="?page={{ contacts.next_page_number }}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base_header.html' %}
+{% load static %}
+{% block nav-list %}
+    <li><a href="{% url 'index_Web:index' %}">主页</a></li>
+    <li class="active"><a href="{% url 'index_Web:find_doctor' %}">找医生</a></li>
+    <li><a href="{% url 'index_Web:classic_answer' %}">经典问答</a></li>
+    <li><a href="{% url 'index_Web:health_info' %}">健康资讯</a></li>
+    <li><a href="{% url 'index_Web:repository' %}">糖尿病知识库</a></li>
+    <li><a href="{% url 'calorie:index' %}">食物热量表</a></li>
+{% endblock %}
+{% block page_content %}
+    <div class="media well col-md-4">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="{% static 'Web/selfs/imags/doctor/dj_20.jpg' %}" />
+        </a>
+        <div class="media-body" contenteditable="true">
+            <h4 class="media-heading">郭镫鸿：达内 iOS 教研部 副总监</h4>
+            8年国有大型企业项目开发经验。曾就职于国 资委直属企业中国铁路通信信号集团公司，
+            讲课 善于演绎知识体系结构并且对其内容准确分析。 对待学生答问幽默风趣。
+        </div>
+        <a href="#" class="btb btn-default">>>联系医生</a>
+    </div>
+
+
+{% endblock %}
